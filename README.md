@@ -45,6 +45,28 @@ python ddos_aco_rf.py --dataset sample_sdn_ddos.csv --target Label
 
 For project results, use a real dataset such as CICIDS2017 or NSL-KDD.
 
+## Visual Simulation Demo
+
+To show a live ACO simulation window:
+
+```bash
+python aco_simulation_demo.py --dataset sample_sdn_ddos.csv --target Label
+```
+
+For a faster classroom/viva demo:
+
+```bash
+python aco_simulation_demo.py --dataset sample_sdn_ddos.csv --target Label --ants 3 --iterations 3 --subset-size 3
+```
+
+To save the simulation as a GIF:
+
+```bash
+python aco_simulation_demo.py --dataset sample_sdn_ddos.csv --target Label --save-gif outputs/aco_simulation.gif
+```
+
+In the simulation, green nodes are the features selected by the current ant, the orange outline shows the best features found so far, and the bar chart shows pheromone strength.
+
 ## Useful Options
 
 ```bash
